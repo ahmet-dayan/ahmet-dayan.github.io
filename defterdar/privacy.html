@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası | Defterdar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e9;
+            margin: 0;
+            padding: 40px 20px;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid #e0d8c3;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        .last-update {
+            font-size: 14px;
+            color: #8a7e5d;
+            margin-bottom: 30px;
+            display: block;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 30px;
+            border-bottom: 2px solid #f7f3e9;
+            padding-bottom: 8px;
+        }
+        p, ul {
+            font-size: 15px;
+            color: #636e72;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-box {
+            background-color: #fff8e1;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 40px;
+            border: 1px solid #e0d8c3;
+        }
+        .footer-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2d3436;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="footer-link">← Geri Dön</a>
+    
+    <h1>Gizlilik Politikası</h1>
+    <span class="last-update">Son güncelleme: 5 Ekim 2026</span>
+
+    <p>Bu politika, <strong>Defterdar</strong> (Cari, Kasa & Ön Muhasebe Yönetimi) uygulamasını kullanırken hangi verilerin işlenebileceğini, bu verilerin ne için kullanıldığını ve kullanıcının veri üzerindeki haklarını açıklar.</p>
+
+    <h2>1. Çevrimdışı (Offline-First) Mimari ve Yerel Depolama</h2>
+    <p>Defterdar, kullanıcı gizliliğini ve veri egemenliğini en üst düzeyde korumak üzere <strong>çevrimdışı öncelikli (offline-first)</strong> olarak tasarlanmıştır. Uygulamaya girdiğiniz ticari ve finansal veriler (cariler, gelir/gider hareketleri, kasa ve banka kayıtları, teklifler ve notlar) varsayılan olarak yalnızca cihazınızın yerel SQLite veritabanında saklanır. Geliştirici veya üçüncü taraflar bu verilere doğrudan erişemez.</p>
+
+    <h2>2. İşlenen Veri Kategorileri</h2>
+    <p>Defterdar, sunduğu işlevlere bağlı olarak cihazınızda şu veri türlerini işleyebilir:</p>
+    <ul>
+        <li><strong>Cari ve Müşteri Bilgileri:</strong> Cari unvanı, yetkili adı, telefon numarası, e-posta adresi, vergi kimlik numarası, adres ve bakiye kayıtları.</li>
+        <li><strong>Finansal Hareketler:</strong> Tahsilat, ödeme, gelir, gider, fatura kalemleri, kasa/banka virmanları ve işlem açıklamaları.</li>
+        <li><strong>Teklif ve Belgeler:</strong> Oluşturulan teklif detayları, ürün/hizmet kalemleri, KDV ve indirim oranları.</li>
+        <li><strong>Abonelik ve Lisans Bilgileri:</strong> Apple App Store ve Google Play Store üzerinden satın alınan PRO aboneliklerin geçerlilik durumuna ilişkin anonim işlem belirteçleri (RevenueCat aracılığıyla doğrulanır).</li>
+        <li><strong>İsteğe Bağlı Yedekler:</strong> Kullanıcının açık onayıyla oluşturulan yerel `.pocketcari` yedek dosyaları veya kullanıcının kendi Google Drive hesabına aktarılan yedekler.</li>
+    </ul>
+
+    <h2>3. Verileri Neden Kullanıyoruz?</h2>
+    <ul>
+        <li>KOBİ ve esnaflar için kapsamlı cari hesap, bakiye ve kasa takibi sunmak,</li>
+        <li>Finansal raporlar, gelir/gider analizleri ve cari ekstreler üretmek,</li>
+        <li>Teklif hazırlama ve PDF/Excel formatında profesyonel belge paylaşımı sağlamak,</li>
+        <li>Vadesi gelen ödemeler ve tahsilatlar için cihaz içi yerel bildirimler oluşturmak,</li>
+        <li>Abonelik durumunu doğrulamak ve PRO özelliklere erişimi yönetmek.</li>
+    </ul>
+
+    <h2>4. Üçüncü Taraf Servisler</h2>
+    <p>Hizmetin eksiksiz çalışabilmesi amacıyla yalnızca aşağıdaki güvenilir üçüncü taraf servisler kullanılır:</p>
+    <ul>
+        <li><strong>RevenueCat:</strong> Uygulama içi satın alma ve PRO abonelik yetki doğrulamasının yönetimi.</li>
+        <li><strong>Google Drive API:</strong> Yalnızca kullanıcının kendi isteğiyle buluta yedek alması ve yedeği geri yüklemesi durumunda, kullanıcının kendi Google Drive depolama alanına erişmek için kullanılır.</li>
+        <li><strong>Apple StoreKit / Google Play Billing:</strong> Güvenli ödeme ve abonelik işlemlerinin gerçekleştirilmesi.</li>
+    </ul>
+
+    <h2>5. Veri Güvenliği ve Saklama</h2>
+    <p>Verileriniz cihazınızda SQLite şifreli/güvenli depolama standartlarına uygun olarak barındırılır. Verilerinizi cihazınızdan silmek istediğinizde Ayarlar &gt; Veri Sıfırla seçeneğini kullanabilir veya uygulamayı cihazınızdan kaldırarak tüm yerel verilerin anında imha edilmesini sağlayabilirsiniz.</p>
+
+    <h2>6. Kullanıcı Hakları ve İletişim</h2>
+    <p>KVKK ve uluslararası veri koruma düzenlemeleri (GDPR) kapsamında verileriniz üzerinde tam kontrol hakkına sahipsiniz. Her türlü gizlilik sorusu ve talebiniz için bizimle iletişime geçebilirsiniz:</p>
+
+    <div class="contact-box">
+        <strong>İletişim:</strong><br>
+        Geliştirici: Ahmet Dayan<br>
+        E-posta: <a href="mailto:hsn.dyn721@gmail.com" style="color: #2d3436;">hsn.dyn721@gmail.com</a>
+    </div>
+
+    <p style="font-size: 12px; margin-top: 30px; color: #b2bec3;">
+        <em><strong>Önemli Yasal Not:</strong> Defterdar bir işletme yönetim ve ön muhasebe takip aracıdır; resmi mali müşavirlik, vergi denetimi veya yasal danışmanlık hizmeti yerine geçmez.</em>
+    </p>
+</div>
+
+</body>
+</html>
